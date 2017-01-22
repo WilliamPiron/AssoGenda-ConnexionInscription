@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ecran_daccueil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="williampiron.classique.miage.assogenda.EcranDAccueilActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/verticalLayout"
+        android:elevation="0dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/accueil_pseudo"
+            android:textAlignment="center"
+            android:hint="Identifiant"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/accueil_password"
+            android:textAlignment="center"
+            android:hint="Mot de passe"/>
+
+        <Button
+            android:text="Se connecter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/accueil_signInButton" />
+
+        <TextView
+            android:text="Pas encore inscrit ? Créez votre compte gratuitement !"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/accueil_signUpText"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textSize="18sp" />
+
+        <Button
+            android:text="S'inscrire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/accueil_signUpButton" />
+    </LinearLayout>
+
+    <Button
+        android:text="TEST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verticalLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/accueil_testButton" />
+
+</RelativeLayout>
